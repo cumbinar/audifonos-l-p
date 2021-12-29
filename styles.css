@@ -1,0 +1,68 @@
+:root {
+    /*Genera custom propierties colores*/
+    --primario: #1073BA;
+    --secundario: #00DA55;
+    --gris: #3B3B3B;
+    --blanco: #FFFFFF;
+    --negro: #1F1E1E;
+    --grisClaro: #E1E1E1;
+    /*define separación entre elementos*/
+    --separación: 5rem;
+    /*Genera custom properties fuentes*/
+    --fuentePrincipal: 'Roboto', sans-serif;
+    --fuenteSecundaria: 'Lato', sans-serif;
+}
+
+/*reset caja para que no crezca con margin y padding*/
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*equivalencia: 1rem = 10 pixeles*/
+}
+
+*,
+*:before,
+:after{
+    box-sizing: inherit;
+}
+
+/*Define fuentes y tamaños*/
+body{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+}
+
+/*Globales*/
+
+.contenedor{
+    max-width: 120rem; /*define ancho máximo del vp*/
+    width: 90%; /*Define hasta el 90% del ancho máximo del vp*/
+    margin:  0 auto; /*Para centrar contenidos : imágenes*/
+}
+
+h1, h2, h3{
+    font-weight: 900; /*Define valor negrita*/
+    font-family: var(--fuenteSecundaria);
+    margin: calc(var(--separación)/2) /*calcula 5rem/2;declarado en custom properties*/
+}
+
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%; /*cubren el 100% del ancho disponible*/
+    display: block; /*convierte las imágenes a modo bloque*/
+}
+
+/*UTILIDADES*/
+
+.text-center{
+    text-align: center; /*define una utilidad para centrar textos*/
+}
+
