@@ -7,7 +7,7 @@
     --negro: #1F1E1E;
     --grisClaro: #E1E1E1;
     /*define separación entre elementos*/
-    --separación: 5rem;
+    --separacion: 5rem;
     /*Genera custom properties fuentes*/
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Lato', sans-serif;
@@ -57,6 +57,7 @@ h3{
 
 img{
     max-width: 100%; /*cubren el 100% del ancho disponible*/
+    height: auto; /*proporciona la altura*/
     display: block; /*convierte las imágenes a modo bloque*/
 }
 
@@ -65,4 +66,19 @@ img{
 .text-center{
     text-align: center; /*define una utilidad para centrar textos*/
 }
+
+/*HEADER*/
+.header{
+    background-color: var(--negro);
+    padding:calc(var(--separacion)*2) 0; /*multiplica separacion * 2 */
+    color: var(--blanco);
+}
+
+@media (min-width: 768px) {
+    .contenido-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
