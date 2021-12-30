@@ -14,34 +14,48 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="contenedor contenido-header">
-        <picture>
-            <!--En source se definen varios formatos para <picture>-->
-            <source
-                    sizes="1920w"
-                    srcset="img/header.avif 1920w"
-                    type="image/avif">
-            <source
-                    sizes="1920w"
-                    srcset="img/header.webp 1920w"
-                    type="image/webp">
-            <source
-                    sizes="1920w"
-                    srcset="img/header.png"
-                    type="image/png">
-            <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="500" height="300">
-        </picture>
-        <div class="texto-header">
-            <p class="tagline-producto">Sonido Profesional</p>
-            <h1 class="nombre-producto degradado-verde">TechPRO</h1>
-            <p class="descripcion-producto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ased do
-                eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod tempor incididunt ut labore et
-                dolore magna do eiusmod tempor liqua.</p>
-            <p class="precio-producto"> Desde <span> $299</span></p>
+    <header class="header">
+        <div class="contenedor contenido-header">
+
+            <img src="img/header.png">
+
+            <div class="texto-header">
+                <p class="tagline-producto">Sonido Profesional</p>
+                <h1 class="nombre-producto degradado-verde">TechPRO</h1>
+                <p class="descripcion-producto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ased do
+                    eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod tempor incididunt ut labore et
+                    dolore magna do eiusmod tempor liqua.</p>
+                <p class="precio-producto"> Desde <span> $299</span></p>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+<!--sección Iconos-->
+
+    <section>
+        <div class="contenedor">
+            <div class="iconos">
+                <div class="icono">
+                    <img src="img/icono-sonido.svg" alt="imagen icono">
+                    <h3>Gran Sonido</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt ut
+                        laboredolore magna do eiusmod tempor ncididunt ut labore dolore ncididunt ut labore dolore ncididunt ut labore dolore</p>
+                </div>
+
+                <div class="icono">
+                    <img src="img/icono-garantia.svg" alt="imagen icono">
+                    <h3>Garantía de por vida</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt ut
+                        laboredolore magna do eiusmod tempor ncididunt ut labore ncididunt ut labore doloredolore ncididunt ut labore dolore</p>
+                </div>
+
+                <div class="icono">
+                    <img src="img/icono-bateria.svg" alt="imagen icono">
+                    <h3>Batería de larga duración</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt ut laboredolore magna do eiusmod tempor ncididunt ut labore dolore</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
