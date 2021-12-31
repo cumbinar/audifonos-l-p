@@ -155,8 +155,8 @@ img{
 }
 @media(min-width: 768px){
     .iconos{
-        display: flex;
-        gap: 2rem;
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
