@@ -5,8 +5,8 @@
     --gris: #3B3B3B;
     --blanco: #FFFFFF;
     --negro: #1F1E1E;
-    --grisClaro: #E1E1E1;
-    /*define separación entre elementos*/
+    --grisClaro: #bebdbd;
+    /*define separacion entre elementos*/
     --separacion: 5rem;
     /*Genera custom properties fuentes*/
     --fuentePrincipal: 'Roboto', sans-serif;
@@ -29,8 +29,20 @@ html{
 body{
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
-}
 
+}
+/*@media only screen and (max-width: 1024px) and (min-width: 768px) {*/
+/*    body{*/
+/*        font-family: var(--fuentePrincipal);*/
+/*        font-size: 1.6rem;*/
+/*        background-color: red;*/
+/*    }*/
+/*}*/
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    body {
+        background-color: var(--grisClaro);
+    }
+}
 /*Globales*/
 
 .contenedor{
@@ -42,7 +54,7 @@ body{
 h1, h2, h3{
     font-weight: 900; /*Define valor negrita*/
     font-family: var(--fuenteSecundaria);
-    margin: calc(var(--separación)/2) /*calcula 5rem/2;declarado en custom properties*/
+    margin: calc(var(--separacion) / 2); /*calcula 5rem/2;declarado en custom properties*/
 }
 
 h1{
@@ -61,6 +73,7 @@ img{
     margin: auto; /*centra la imagen*/
     display: block; /*convierte las imágenes a modo bloque*/
 }
+
 @media(min-width: 768px){
     img{
         max-width: 50%; /*cubren el 80% del ancho disponible*/
@@ -181,55 +194,56 @@ img{
     margin-top: 1rem;
 }
 
-
 .sobre-tech-grid {
     display: grid;
-   /* grid-template-rows: repeat(2, 1fr);*/
-    padding: 0;
-    margin: 0;
-    /*row-gap: var(--separacion);*/
-    /*para movilcel se definen dos filas*/
-    /*una para la imagen y otra para el texto*/
+    grid-template-rows: .4fr 1fr;
+
 }
-.dama{
-    max-width: 100%; /*cubren el 50% del ancho de la imagen original*/
-    height: auto; /*proporciona la altura*/
-    margin: auto; /*centra la imagen*/
-   /* grid-column: 1 / 2;*/
-    /*display: block; !*convierte las imágenes a modo bloque*!*/
-}
+
 @media(min-width: 768px) {
     .sobre-tech-grid {
         display: grid;
+       grid-template-rows: unset;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 4rem;
+        column-gap: 2rem;
     }
 }
-    /*se forman dos columnnas*/
+
+/*.sobre-tech-grid {*/
+/*    display: grid;*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+
+/*}*/
+.dama {
+    max-width: 100%; /*cubren el 50% del ancho de la imagen original*/
+    height: auto; /*proporciona la altura*/
+    margin: 0;
+
+}/*centra la imagen*/
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .dama{
+      max-width: 101%;
+  }
+}
+
 
 .sobre-tech{
     background-color: var(--negro);
     margin-bottom: 5rem;
 }
 .texto-sobre-tech{
-    margin-top: 3rem;
+    margin-top: 0;
 }
-@media(min-width: 768px){
-    .texto-sobre-tech{
-        margin-top: 4rem;
-    }
-}
-.texto-sobre-tech h2{
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 2rem;
-    color: var(--blanco);
-}
+
 .texto-sobre-tech p{
     color: var(--blanco);
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
+    padding: 0 1rem;
 
 }
 @media(min-width: 768px){
@@ -238,10 +252,60 @@ img{
         text-align: left;
     }
 }
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .texto-sobre-tech {
+        background-color: var(--negro);
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px){
+    .texto-sobre-tech p{
+        font-size: 1.5rem;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: var(--blanco)
+    }
+}
+@media(min-width: 1024px){
+    .texto-sobre-tech{
+        margin-top: 0;
+    }
+}
+
+/*@media only screen and (max-width: 1024px) and (min-width: 768px){*/
+/*    .texto-sobre-tech p{*/
+/*        margin-top: 0;*/
+/*        font-size: 1rem;*/
+/*        padding-bottom: 0;*/
+/*    }*/
+/*}*/
+
+
+.texto-sobre-tech h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--blanco);
+}
+
+/*@media only screen and (max-width: 1024px) and (min-width: 768px) {*/
+/*    .texto-sobre-tech p{*/
+/*        font-size: 1.5rem;*/
+/*        text-align: left;*/
+/*    }*/
+/*}*/
 
 @media(min-width: 768px){
     .texto-sobre-tech h2{
         font-size: 4rem;
     }
+}
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+    .texto-sobre-tech h2{
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
 }
