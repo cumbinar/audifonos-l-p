@@ -145,13 +145,16 @@ img{
 }
 
 /*ICONOS*/
+.margen{
+    margin-top: 3rem;
+}
 .icono{
     text-align: center;
     margin-bottom: var(--separacion);
 }
 
-.iconos{
-    padding: var(--separacion) 0;
+.iconos {
+    padding: 0;
 }
 @media(min-width: 768px){
     .iconos{
@@ -170,9 +173,75 @@ img{
 .icono img{
     width: 5rem;
 }
+
 .icono h3{
     font-size: 2rem;
     color: var(--primario);
     text-align: center;
     margin-top: 1rem;
+}
+
+
+.sobre-tech-grid {
+    display: grid;
+   /* grid-template-rows: repeat(2, 1fr);*/
+    padding: 0;
+    margin: 0;
+    /*row-gap: var(--separacion);*/
+    /*para movilcel se definen dos filas*/
+    /*una para la imagen y otra para el texto*/
+}
+.dama{
+    max-width: 100%; /*cubren el 50% del ancho de la imagen original*/
+    height: auto; /*proporciona la altura*/
+    margin: auto; /*centra la imagen*/
+   /* grid-column: 1 / 2;*/
+    /*display: block; !*convierte las imágenes a modo bloque*!*/
+}
+@media(min-width: 768px) {
+    .sobre-tech-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+}
+    /*se forman dos columnnas*/
+
+.sobre-tech{
+    background-color: var(--negro);
+    margin-bottom: 5rem;
+}
+.texto-sobre-tech{
+    margin-top: 3rem;
+}
+@media(min-width: 768px){
+    .texto-sobre-tech{
+        margin-top: 4rem;
+    }
+}
+.texto-sobre-tech h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--blanco);
+}
+.texto-sobre-tech p{
+    color: var(--blanco);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+
+}
+@media(min-width: 768px){
+    .texto-sobre-tech p{
+        font-size: 2rem;
+        text-align: left;
+    }
+}
+
+@media(min-width: 768px){
+    .texto-sobre-tech h2{
+        font-size: 4rem;
+    }
+
 }
