@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CumbiAudio</title>
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon-a.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -14,32 +14,98 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header contenedor">
         <div class="contenedor contenido-header">
-            <picture>
-               <!--En source se definen varios formatos para <picture>-->
-                <source
-                    sizes="1920w"
-                    srcset="img/header.avif 1920w"
-                    type="image/avif">
-                <source
-                    sizes="1920w"
-                    srcset="img/header.webp 1920w"
-                    type="image/webp">
-                <source
-                    sizes="1920w"
-                    srcset="img/header.png"
-                    type="image/png">
-                <img loading="lazy" decoding="async" src="img/header.png" lazyalt="imagen" width="500" height="300">
-            </picture>
+
+            <img src="img/header.png">
+
             <div class="texto-header">
-                <p class="tagline-producto">Sonido profesional</p>
-                <h1 class="nombre-producto">TechPRO</h1>
-                <p class="descripcion-producto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p class="tagline-producto">Sonido Profesional</p>
+                <h1 class="nombre-producto degradado-verde">TechPRO</h1>
+                <p class="descripcion-producto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit,  ased do
+                    eiusmod tempor incididunt ut labore et dolore magna sed do eiusmod tempor incididunt ut labore et
+                    dolore magna do eiusmod tempor liqua.</p>
                 <p class="precio-producto"> Desde <span> $299</span></p>
             </div>
         </div>
     </header>
+<!--sección Iconos-->
 
+    <section class="margen">
+        <div class="contenedor">
+            <div class="iconos">
+                <div class="icono">
+                    <img src="img/icono-sonido.svg" alt="imagen icono">
+                    <h3>Gran Sonido</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt ut
+                        laboredolore magna do eiusmod tempor ncididunt ut labore dolore ncididunt ut labore dolore ncididunt ut labore dolore</p>
+                </div>
+
+                <div class="icono">
+                    <img src="img/icono-garantia.svg" alt="imagen icono">
+                    <h3>Garantía de por vida</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod tempor incididunt ut
+                        laboredolore magna do eiusmod tempor ncididunt ut labore ncididunt ut labore doloredolore ncididunt ut labore dolore</p>
+                </div>
+
+                <div class="icono">
+                    <img src="img/icono-bateria.svg" alt="imagen icono">
+                    <h3>Batería de larga duración</h3>
+                    <p>ased diusmod tempor incididunt ut labore et dolore magna eiusmod abore et dolore magna tempor incididunt ut
+                        laboredolore magna do eiusmod tempor ncididunt ut labore dolore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sobre-tech contenedor">
+        <div class="sobre-tech-grid">
+            <img class="dama" src="img/imagen-mujer.jpg">
+            <div class="texto-sobre-tech">
+                <h2 >Sobre los <span class="degradado-verde"> TechPRO</span></h2>
+                <p>Lsed diusmod tempor incididunt ut labore et dolore magna eiusmod abore et dolore magna tempor
+                    incididunt ut laboredolore magna do eiusmod tempor ncididunt ut labore dolore sed diusmod tempor incididunt ut labore et dolore  </p>
+            </div>
+        </div>
+    </section>
+
+    <main class="contenedor modelos header-modelos">
+        <h2 class="text-center">Elige tus <span class="degradado-verde"> TechPRO</span></h2>
+        <div class="listado-modelos">
+            <div class="modelo modelo-x">
+                <h3 class="degradado-verde">TechPro X</h3>
+                <p class="precio">$299</p>
+            </div>
+            <div class="modelo modelo-y">
+                <h3 class="degradado-verde">TechPro Y</h3>
+                <p class="precio">$399</p>
+            </div>
+            <div class="modelo modelo-z">
+                <h3 class="degradado-verde">TechPro Z</h3>
+                <p class="precio">$499</p>
+            </div>
+        </div>
+    </main>
+
+    <section class="newsletter contenedor">
+        <div class="contenido-newsletter ">
+            <img class="img-newlester" src="img/newsletter.jpg">
+            <div class="texto-newsletter">
+                <h2>Recibe actualizaciones</h2>
+                <p> incididunt ut laboredolore magna do eiusmod tempor ncididunt ut labore dolore sed diusmod tempor incididunt ut labore et dolore </p>
+                <form class="formulario">
+                    <div >
+                        <input class="input-newlestter type="text" placeholder="Tu email">
+                    </div>
+                    <input class="btn-inscribirme" type="submit" value="Inscribirme">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <hr>
+        <p>cumbinar 2022 todos los derechos reservados</p>
+        <hr>
+    </footer>
 </body>
 </html>
