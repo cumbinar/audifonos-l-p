@@ -431,19 +431,17 @@ img{
 /*        background-color: blueviolet;*/
 /*    }*/
 /*}*/
-@media (min-width: 768px){
-    .texto-newsletter{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-    }
-
-
-    .img-newlester{
-        width: auto;
-        height: 100%;
-    }
+.texto-newsletter{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
 }
+
+.img-newlester{
+    width: auto;
+    height: 100%;
+}
+
 .formulario {
     display: grid;
     grid-row: repeat(2, 1fr);
@@ -465,4 +463,10 @@ img{
 }
 .btn-inscribirme:hover{
     background-color: var(--secundario);
+}
+
+/*FOOTER*/
+
+.footer{
+    text-align: center;
 }
